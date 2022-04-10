@@ -11,7 +11,8 @@ auth= Blueprint('auth',__name__)
 
 @auth.route('/')
 def home():
-    return redirect(url_for('auth.home'))
+    # return redirect(url_for('home.html'))
+    return render_template('home.html')
 
 @auth.route('/dash')
 def dash():
@@ -35,7 +36,7 @@ def login():
             if check_password_hash(user.password, password):
                 flash('Logged in Successfully', category='success')
                 login_user(user, remember=True)
-                return redirect(url_for('views.home'))
+                return redirect(url_for('views.index'))
             else:
                 flash('Something is not right.... Try again', category='error')
         else:
