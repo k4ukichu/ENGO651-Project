@@ -128,7 +128,7 @@ function route(){
   container: "map",
   style: "mapbox://styles/mapbox/basic-v9",
   center: [-114.06, 51.05],
-  zoom: 11
+  zoom: 12
   });
   
   map.on('load', function() {
@@ -175,69 +175,60 @@ function route(){
   var incidents = {
   type: 'FeatureCollection',
   features: [
+  
   {
       'type': 'Feature',
       'geometry': {
           'type': 'Point',
-          'coordinates': [-113.958331,50.9504395]
+          'coordinates': [-114.075,51.041]
       },
       'properties': { 
-          'CAMERA30':"cAMERA URL: http://trafficcam.calgary.ca/loc29.jpg)",
+          'risk':"Risk Level:  High",
+          'incidents': "Number of incidents: 817"
       }
   },
   {
       'type': 'Feature',
       'geometry': {
           'type': 'Point',
-          'coordinates': [-114.17,51.09]
-      },
-      'properties': { 
-          'risk':"Risk Level: Relatively High",
-          'incidents': "Number of incidents: 353"
-      }
-  },
-  {
-      'type': 'Feature',
-      'geometry': {
-          'type': 'Point',
-          'coordinates': [-114.16,51.05]
-      },
-      'properties': { 
-          'risk':"Risk Level: Relatively High",
-          'incidents': "Number of incidents: 513"
-      }
-  },
-  {
-      'type': 'Feature',
-      'geometry': {
-          'type': 'Point',
-          'coordinates': [-114.10,51.15]
-      },
-      'properties': { 
-          'risk':"Risk Level: Relatively High",
-          'incidents': "Number of incidents: 336"
-      }
-  },
-  {
-      'type': 'Feature',
-      'geometry': {
-          'type': 'Point',
-          'coordinates': [-114.11,51.07]
+          'coordinates': [-114.063,51.046]
       },
       'properties': { 
           'risk':"Risk Level: High",
-          'incidents': "Number of incidents: 928"
+          'incidents': "Number of incidents: 747"
       }
   },
   {
       'type': 'Feature',
       'geometry': {
           'type': 'Point',
-          'coordinates': [-114.10,51.00]
+          'coordinates': [-114.09,51.02]
       },
       'properties': { 
-          'risk':"Risk Level: High",
-          'incidents': "Number of incidents: 1228"
+          'risk':"Risk Level: Relatively low",
+          'incidents': "Number of incidents: 35"
+      }
+  },
+  {
+      'type': 'Feature',
+      'geometry': {
+          'type': 'Point',
+          'coordinates': [-114.12,51.104]
+      },
+      'properties': { 
+          'risk':"Risk Level: Relatively high",
+          'incidents': "Number of incidents: 117"
+      }
+  },
+  {
+      'type': 'Feature',
+      'geometry': {
+          'type': 'Point',
+          'coordinates': [-114.013,51.124]
+      },
+      'properties': { 
+          'risk':"Risk Level: Relatively High",
+          'incidents': "Number of incidents: 200"
       }
   },
   {
@@ -247,351 +238,142 @@ function route(){
           'coordinates': [-114.10,50.96]
       },
       'properties': { 
-          'risk':"Risk Level: Relatively High",
-          'incidents': "Number of incidents: 361"
+          'risk':"Risk Level: Relatively low",
+          'incidents': "Number of incidents: 15"
       }
   },
   {
       'type': 'Feature',
       'geometry': {
           'type': 'Point',
-          'coordinates': [-114.08,51.05]
+          'coordinates': [-114.057,51.013]
       },
       'properties': { 
           'risk':"Risk Level: High",
-          'incidents': "Number of incidents: 2346"
+          'incidents': "Number of incidents: 445"
       }
   },
   {
       'type': 'Feature',
       'geometry': {
           'type': 'Point',
-          'coordinates': [-114.07,50.91]
+          'coordinates': [-114.04,50.886]
+      },
+      'properties': { 
+          'risk':"Risk Level: Relatively high",
+          'incidents': "Number of incidents: 123"
+      }
+  },
+  {
+      'type': 'Feature',
+      'geometry': {
+          'type': 'Point',
+          'coordinates': [-114.065,50.903]
       },
       'properties': { 
           'risk':"Risk Level: Relatively High",
-          'incidents': "Number of incidents: 556"
+          'incidents': "Number of incidents: 205"
       }
   },
   {
       'type': 'Feature',
       'geometry': {
           'type': 'Point',
-          'coordinates': [-114.04,51.14]
+          'coordinates': [-114.056,50.957]
       },
       'properties': { 
           'risk':"Risk Level: High",
-          'incidents': "Number of incidents: 530"
+          'incidents': "Number of incidents: 570"
       }
   },
   {
-      'type': 'Feature',
-      'geometry': {
-          'type': 'Point',
-          'coordinates': [-114.05,51.10]
-      },
-      'properties': { 
-          'risk':"Risk Level: High",
-          'incidents': "Number of incidents: 1223"
-      }
+    'type': 'Feature',
+    'geometry': {
+        'type': 'Point',
+        'coordinates': [-114.14,50.917]
+    },
+    'properties': { 
+        'risk':"Risk Level: Relatively low",
+        'incidents': "Number of incidents: 39"
+    }
+},
+{
+  'type': 'Feature',
+  'geometry': {
+      'type': 'Point',
+      'coordinates': [-114.15,51.016]
   },
-  {
-      'type': 'Feature',
-      'geometry': {
-          'type': 'Point',
-          'coordinates': [-114.01,51.05]
-      },
-      'properties': { 
-          'risk':"Risk Level: High",
-          'incidents': "Number of incidents: 2021"
-      }
-  },
-  {
-      'type': 'Feature',
-      'geometry': {
-          'type': 'Point',
-          'coordinates': [-114.05,50.99]
-      },
-      'properties': { 
-          'risk':"Risk Level: High",
-          'incidents': "Number of incidents: 1757"
-      }
-  },
-  {
-      'type': 'Feature',
-      'geometry': {
-          'type': 'Point',
-          'coordinates': [-114.04,50.95]
-      },
-      'properties': { 
-          'risk':"Risk Level: High",
-          'incidents': "Number of incidents: 1024"
-      }
-  },
-  {
-      'type': 'Feature',
-      'geometry': {
-          'type': 'Point',
-          'coordinates': [-113.99,51.08]
-      },
-      'properties': { 
-          'risk':"Risk Level: Relatively High",
-          'incidents': "Number of incidents: 857"
-      }
-  },
-  {
-      'type': 'Feature',
-      'geometry': {
-          'type': 'Point',
-          'coordinates': [-113.99,51.01]
-      },
-      'properties': { 
-          'risk':"Risk Level: High",
-          'incidents': "Number of incidents: 742"
-      }
-  },
-  {
-      'type': 'Feature',
-      'geometry': {
-          'type': 'Point',
-          'coordinates': [-113.97,50.95]
-      },
-      'properties': { 
-          'risk':"Risk Level: High",
-          'incidents': "Number of incidents: 496"
-      }
-  },
-  {
-      'type': 'Feature',
-      'geometry': {
-          'type': 'Point',
-          'coordinates': [-113.95,51.11]
-      },
-      'properties': { 
-          'risk':"Risk Level: Relatively High",
-          'incidents': "Number of incidents: 759"
-      }
-  },
-  {
-      'type': 'Feature',
-      'geometry': {
-          'type': 'Point',
-          'coordinates': [-113.94,51.06]
-      },
-      'properties': { 
-          'risk':"Risk Level: Relatively High",
-          'incidents': "Number of incidents: 650"
-      }
-  },
-  {
-      'type': 'Feature',
-      'geometry': {
-          'type': 'Point',
-          'coordinates': [-113.94,51.03]
-      },
-      'properties': { 
-          'risk':"Risk Level: Relatively High",
-          'incidents': "Number of incidents: 384"
-      }
-  },
-  {
-      'type': 'Feature',
-      'geometry': {
-          'type': 'Point',
-          'coordinates': [-114.16,51.16]
-      },
-      'properties': { 
-          'risk':"Risk Level: Relatively High",
-          'incidents': "Number of incidents: 293"
-      }
-  },
-  {
-      'type': 'Feature',
-      'geometry': {
-          'type': 'Point',
-          'coordinates': [-114.01,51.17]
-      },
-      'properties': { 
-          'risk':"Risk Level: Relatively High",
-          'incidents': "Number of incidents: 151"
-      }
-  },
-  {
-      'type': 'Feature',
-      'geometry': {
-          'type': 'Point',
-          'coordinates': [-114.02,50.88]
-      },
-      'properties': { 
-          'risk':"Risk Level: Relatively High",
-          'incidents': "Number of incidents: 256"
-      }
-  },
-  {
-      'type': 'Feature',
-      'geometry': {
-          'type': 'Point',
-          'coordinates': [-113.97,51.15]
-      },
-      'properties': { 
-          'risk':"Risk Level: Relatively Low",
-          'incidents': "Number of incidents: 290"
-      }
-  },
-  {
-      'type': 'Feature',
-      'geometry': {
-          'type': 'Point',
-          'coordinates': [-113.96,50.89]
-      },
-      'properties': { 
-          'risk':"Risk Level: Relatively Low",
-          'incidents': "Number of incidents: 274"
-      }
-  },
-  {
-      'type': 'Feature',
-      'geometry': {
-          'type': 'Point',
-          'coordinates': [-113.95,50.97]
-      },
-      'properties': { 
-          'risk':"Risk Level: High Relatively Low",
-          'incidents': "Number of incidents: 238"
-      }
-  },
-  {
-      'type': 'Feature',
-      'geometry': {
-          'type': 'Point',
-          'coordinates': [-114.21,51.15]
-      },
-      'properties': { 
-          'risk':"Risk Level: Relatively Low",
-          'incidents': "Number of incidents: 167"
-      }
-  },
-  {
-      'type': 'Feature',
-      'geometry': {
-          'type': 'Point',
-          'coordinates': [-114.18,51.02]
-      },
-      'properties': { 
-          'risk':"Risk Level: Relatively Low",
-          'incidents': "Number of incidents: 229"
-      }
-  },
-  {
-      'type': 'Feature',
-      'geometry': {
-          'type': 'Point',
-          'coordinates': [-114.24,51.13]
-      },
-      'properties': { 
-          'risk':"Risk Level: Relatively Low",
-          'incidents': "Number of incidents: 85"
-      }
-  },
-  {
-      'type': 'Feature',
-      'geometry': {
-          'type': 'Point',
-          'coordinates': [-114.24,51.09]
-      },
-      'properties': { 
-          'risk':"Risk Level: Relatively Low",
-          'incidents': "Number of incidents: 114"
-      }
-  },
-  {
-      'type': 'Feature',
-      'geometry': {
-          'type': 'Point',
-          'coordinates': [-114.08,51.17]
-      },
-      'properties': { 
-          'risk':"Risk Level: Relatively Low",
-          'incidents': "Number of incidents: 89"
-      }
-  },
-  {
-      'type': 'Feature',
-      'geometry': {
-          'type': 'Point',
-          'coordinates': [-113.92,51.15]
-      },
-      'properties': { 
-          'risk':"Risk Level: Relatively Low",
-          'incidents': "Number of incidents: 81"
-      }
-  },
-  {
-      'type': 'Feature',
-      'geometry': {
-          'type': 'Point',
-          'coordinates': [-113.93,50.94]
-      },
-      'properties': { 
-          'risk':"Risk Level: Relatively Low",
-          'incidents': "Number of incidents: 86"
-      }
-  },
-  {
-      'type': 'Feature',
-      'geometry': {
-          'type': 'Point',
-          'coordinates': [-114.12,50.90]
-      },
-      'properties': { 
-          'risk':"Risk Level: Low",
-          'incidents': "Number of incidents: 48"
-      }
-  },
-  {
-      'type': 'Feature',
-      'geometry': {
-          'type': 'Point',
-          'coordinates': [-114.04,50.86]
-      },
-      'properties': { 
-          'risk':"Risk Level: Low",
-          'incidents': "Number of incidents: 11"
-      }
-  },
-  {
-      'type': 'Feature',
-      'geometry': {
-          'type': 'Point',
-          'coordinates': [-113.965,50.875]
-      },
-      'properties': { 
-          'risk':"Risk Level: Low",
-          'incidents': "Number of incidents: 60"
-      }
-  },
-  {
-      'type': 'Feature',
-      'geometry': {
-          'type': 'Point',
-          'coordinates': [-113.906,50.906]
-      },
-      'properties': { 
-          'risk':"Risk Level: Low",
-          'incidents': "Number of incidents: 32"
-      }
-  },
-  {
-      'type': 'Feature',
-      'geometry': {
-          'type': 'Point',
-          'coordinates': [-113.89,51.04]
-      },
-      'properties': { 
-          'risk':"Risk Level: Low",
-          'incidents': "Number of incidents: 23"
-      }
+  'properties': { 
+      'risk':"Risk Level: Relatively low",
+      'incidents': "Number of incidents: 129"
   }
+},
+{
+  'type': 'Feature',
+  'geometry': {
+      'type': 'Point',
+      'coordinates': [-114.134,51.008]
+  },
+  'properties': { 
+      'risk':"Risk Level: Relatively high",
+      'incidents': "Number of incidents: 122"
+  }
+},
+  {
+      'type': 'Feature',
+      'geometry': {
+          'type': 'Point',
+          'coordinates': [-114.04,50.886]
+      },
+      'properties': { 
+          'risk':"Risk Level: Relatively high",
+          'incidents': "Number of incidents: 123"
+      }
+  },
+  {
+    'type': 'Feature',
+    'geometry': {
+        'type': 'Point',
+        'coordinates': [-114.585,50.789]
+    },
+    'properties': { 
+        'risk':"Risk Level:  relatively low",
+        'incidents': "Number of incidents: 120"
+    }
+},
+{
+  'type': 'Feature',
+  'geometry': {
+      'type': 'Point',
+      'coordinates': [-114.042,50.999]
+  },
+  'properties': { 
+      'risk':"Risk Level:  high",
+      'incidents': "Number of incidents: 631"
+  }
+},
+{
+  'type': 'Feature',
+  'geometry': {
+      'type': 'Point',
+      'coordinates': [-113.96,50.908]
+  },
+  'properties': { 
+      'risk':"Risk Level: Relatively high",
+      'incidents': "Number of incidents: 281"
+  }
+},
+{
+  'type': 'Feature',
+  'geometry': {
+      'type': 'Point',
+      'coordinates': [-114.027,51.081]
+  },
+  'properties': { 
+      'risk':"Risk Level: Relatively high",
+      'incidents': "Number of incidents: 374"
+  }
+},
   ]
   };
    
