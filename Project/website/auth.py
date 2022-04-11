@@ -4,7 +4,7 @@ from .models import User
 from werkzeug.security import generate_password_hash, check_password_hash
 from . import db
 from flask_login import login_user, login_required, logout_user, current_user
-
+from .models import Note
 
 auth= Blueprint('auth',__name__)
 
@@ -14,15 +14,21 @@ def home():
     # return redirect(url_for('home.html'))
     return render_template('home.html')
 
-@auth.route('/dash')
+@auth.route('/dash', methods=['GET','POST'])
 def dash():
+    if request.method=='POST':
+        note=request.form.get('note')
+        new_note=Note(data=note,user_id=current_user.id)
+        db.session.add(new_note)
+        db.session.commit()
     return render_template("dashboard.html",user=current_user)
 
 @auth.route('/logout')
 @login_required
 def logout():
     logout_user()
-    return redirect(url_for('auth.login'))
+    # return redirect(url_for('auth.login'))
+    return render_template('home.html')
 
 
 @auth.route('/login', methods=['GET', 'POST'])
@@ -36,7 +42,7 @@ def login():
             if check_password_hash(user.password, password):
                 flash('Logged in Successfully', category='success')
                 login_user(user, remember=True)
-                return redirect(url_for('views.index'))
+                return redirect(url_for('views.home'))
             else:
                 flash('Something is not right.... Try again', category='error')
         else:
@@ -64,5 +70,6 @@ def signup():
             db.session.commit() 
             flash('Account Created', category='success')
             
-    return render_template("login.html", user=current_user)
+    # return render_template("login.html", user=current_user)
+    return redirect('/login')
 

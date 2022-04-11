@@ -36,15 +36,24 @@
                             <p>
                                 To keep connected with us please login with your personal info
                             </p>
-                            <button class="ghost" id="signIn">Sign In</button>
+                            <a id="clicklogin"><button type="button" class="ghost" id="signIn" href="/login">Sign In</button></a>
                         </div>
                         <div class="overlay-panel overlay-right">
                             <h1>Hello!</h1>
                             <p>Tell us about streets</p>
-                            <button class="ghost" id="signUp">Sign Up</button>
+                            <a id="click"><button type="button" class="ghost" id="signUp" href="/signup">Sign Up</button></a>
                         </div>
         </div>
 
     </div>
     <script src="{{url_for('static', filename='signup.js')}}"></script>
+    <script type="text/javascript">
+        var stateObj = { foo: "signup" };
+        function change_my_url()
+        {
+           history.replaceState(stateObj, "/login", "/signup");
+        }
+        var link = document.getElementById('click');
+        link.addEventListener('click', change_my_url, false);
+    </script>
 {% endblock %}

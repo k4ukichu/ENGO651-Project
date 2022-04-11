@@ -18,12 +18,16 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mapbox-polyline/1.1.1/polyline.js"></script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 <script src="{{url_for('static', filename='mapping.js')}}"></script>
+
+
+
 <style>
     body{
         background-image: none;
         background-color:rgba(255, 255, 255, 0.5);
         
     }
+ 
 
     #map{
         height: 700px;
@@ -35,10 +39,15 @@
 </style>
 
 </style> 
-    <button type="button" class="btn btn-primary" id="find" onClick="find()">Find me</button>
-    <button type="button" class="btn btn-primary" id="Traffic" onClick="traffic()">Traffic</button>
-    <button type="button" class="btn btn-primary" id="Traffic" onClick="toggle()">City Data</button>
-    <button type="button" class="btn btn-primary" id="Traffic" onClick="route()">Get Route</button>
+
+
+    <!-- <div class="btn-toolbar">
+        <button type="button" class="btn btn-primary" id="find" onClick="find()">Find me</button>
+        <button type="button" class="btn btn-primary" id="Traffic" onClick="traffic()">Traffic</button>
+        <button type="button" class="btn btn-primary" id="Traffic" onClick="toggle()">City Data</button>
+        <button type="button" class="btn btn-primary" id="Traffic" onClick="route()">Get Route</button>
+    </div> -->
+
     <br>
     <h1 id="name"></h1>
     <div id="map"></div>
@@ -59,5 +68,7 @@ crossorigin=""></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" 
 integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" 
 crossorigin="anonymous"></script>   
+
+
 <script text="text/javascript" src="mapping.js"></script>
 {% endblock %}

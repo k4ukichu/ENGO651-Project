@@ -58,8 +58,8 @@
       <div class="list-group list-group-flush">
         <a class="list-group-item"  href="#section1" style="background-color: #ffffff00; color: #ffffff; border-top: #ffffff00; border-left: #ffffff00; border-right: #ffffff00;">Dashboard</a>
         <a class="list-group-item"  href="#section2" style="background-color: #ffffff00; color: #ffffff; border-left: #ffffff00; border-right: #ffffff00;">Story</a>
-        <a class="list-group-item"  href="map.html" style="background-color: #ffffff00; color: #ffffff;  border-left: #ffffff00; border-right: #ffffff00;">Map</a>
-        <a class="list-group-item"  href="index.html" style="background-color: #ffffff00; color: #ffffff; border-left: #ffffff00; border-right: #ffffff00;"><span class="glyphicon glyphicon-log-out"></span> Log out</a>
+        <a class="list-group-item"  href="/map" style="background-color: #ffffff00; color: #ffffff;  border-left: #ffffff00; border-right: #ffffff00;">Map</a>
+        <a class="list-group-item"  href="/" style="background-color: #ffffff00; color: #ffffff; border-left: #ffffff00; border-right: #ffffff00;"><span class="glyphicon glyphicon-log-out"></span> Log out</a>
       </div><br>
     </div>
     <br>
@@ -78,23 +78,34 @@
 
     <div class="col-sm-9">
       <div class="well">
-            <form action="#", method="#">
-                <textarea name="review" class="form-control" id="exampleFormControlTextarea1" col="100"rows="5"></textarea><br>
+            <form  method="POST">
+                <textarea name="note" class="form-control" id="note" col="100"rows="5"></textarea><br>
 
                 <div id="map" style="width: 100%; height: 200px;"></div>
-
+                <input id="buttonId" type="submit" name="add" class="btn btn-primary" value="Submit">
+              </form>
                 <script>
 
-                  var map = L.map('map').setView([51.05, -114.06], 12);
+    
+var map = L.map('map').setView([51.049999, -114.066666], 10);
+    //  add base map tiles from OpenStreetMap and attribution info to 'map' div
+    L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
 
-                  var tiles = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
-                    maxZoom: 18,
-                    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
-                      'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-                    id: 'mapbox/streets-v11',
-                    tileSize: 512,
-                    zoomOffset: -1
-                  }).addTo(map);
+    // create popup contents
+    var customPopup = "Hi";
+    
+    // specify popup options 
+    var customOptions =
+        {
+        'maxWidth': '500',
+        'className' : 'custom'
+        }
+    
+    // create marker object, pass custom icon as option, pass content and options to popup, add to map
+    L.marker([51.0776,  -114.1407]).bindPopup(customPopup,customOptions).addTo(map);
+    
                 </script>
 
                 <!--
@@ -182,8 +193,7 @@
 
                 </script>
 
-                <input id="buttonId" type="submit" name="add" class="btn btn-primary" value="Submit">
-            </form>
+                
       </div>
     </div>
 
@@ -218,7 +228,7 @@
         <div class="col-sm-3">
           <div class="well">
               <div class="card" style="width: 18rem;">
-                <img src="IMG_8765.jpg" class="card-img-top" alt="..." width="250" height="150">
+                <img src="../static/IMG_8765.jpg" class="card-img-top" alt="..." width="250" height="150">
                 <div class="card-body">
                   <h5 class="card-title">Calgary Night</h5>
                   <p class="card-text">Best view of Calgary's downton in night :)</p>
@@ -231,7 +241,7 @@
         <div class="col-sm-3">
           <div class="well">
               <div class="card" style="width: 18rem;">
-                <img src="old_cinema.jpeg" class="card-img-top" alt="..." width="250" height="150">
+                <img src="../static/old_cinema.jpeg" class="card-img-top" alt="..." width="250" height="150">
                   <div class="card-body">
                     <h5 class="card-title">Live in 90s</h5>
                     <p class="card-text">This cinama feels you watch movie in 90s</p>
