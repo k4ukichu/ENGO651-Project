@@ -31,11 +31,7 @@ $ source venv/bin/activate
 ```sh
 $ pip install -r requirements.txt
 ```
-3. Set up Flask
+3. Srun the server
 ```sh
-$ export FLASK_APP=application.py
-```
-4. run the server
-```sh
-$ flask run
+$ python main.py
 ```
