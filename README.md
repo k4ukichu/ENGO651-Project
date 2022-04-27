@@ -20,7 +20,6 @@ The goal of the project is to create an app that can assist in recommending the 
 -	Leaflet
 -	Mapbox
 -	Open Calgary API dataset
-# How to use the webpage:
 
 # Getting Started
 1. Set up a virtual environment and active it.
