@@ -6,7 +6,9 @@ The goal of the project is to create an app that can assist in recommending the 
 -	Flask
 -	Flask-Session
 -	Sqlite3
-•	You can find all of these libraries in the requirements.txt and install all of them by running this command pip3 install -r requirements.txt in the terminal window.
+
+
+> You can find all of these libraries in the requirements.txt and install all of them by running this command pip3 install -r requirements.txt in the terminal window.
 
 # Tools and Resources used:
 -	HTML 
