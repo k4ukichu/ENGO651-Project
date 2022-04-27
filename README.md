@@ -19,5 +19,3 @@ The goal of the project is to create an app that can assist in recommending the 
 •	Open Calgary API dataset
 # How to use the webpage:
 
-![image](https://user-images.githubusercontent.com/53395337/165429227-a8954bb3-753e-4bf9-b2c7-e8bae089debc.png)
-
