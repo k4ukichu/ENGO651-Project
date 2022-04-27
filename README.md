@@ -8,7 +8,8 @@ The goal of the project is to create an app that can assist in recommending the 
 -	Sqlite3
 
 
-> You can find all of these libraries in the requirements.txt and install all of them by running this command pip3 install -r requirements.txt in the terminal window.
+> You can find all of these libraries in the requirements.txt.
+
 
 # Tools and Resources used:
 -	HTML 
@@ -21,3 +22,21 @@ The goal of the project is to create an app that can assist in recommending the 
 -	Open Calgary API dataset
 # How to use the webpage:
 
+# Getting Started
+1. Set up a virtual environment and active it.
+```sh
+$ python3 -m venv venv
+$ source venv/bin/activate
+```
+2. Install requeriments
+```sh
+$ pip install -r requirements.txt
+```
+3. Set up Flask
+```sh
+$ export FLASK_APP=application.py
+```
+4. run the server
+```sh
+$ flask run
+```
