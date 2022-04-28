@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title></title>
+  <title> Dashboard </title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -12,24 +12,21 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
 		   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
 		   crossorigin=""/>
-	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-   crossorigin=""></script>
+   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+	integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+	crossorigin=""></script>
 
   <style>
-    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
     .row.content {
       height: 100vh;
     }
     
-    /* Set gray background color and 100% height */
     .sidenav {
         background-image:linear-gradient(to right, #402bffd0, #419affda);
         color: #ffffff;
         height: 100%;
     }
         
-    /* On small screens, set height to 'auto' for the grid */
     @media screen and (max-width: 767px) {
       .row.content {height: auto;} 
     }
@@ -62,6 +59,7 @@
         <a class="list-group-item"  href="/" style="background-color: #ffffff00; color: #ffffff; border-left: #ffffff00; border-right: #ffffff00;"><span class="glyphicon glyphicon-log-out"></span> Log out</a>
       </div><br>
     </div>
+	  
     <br>
     
     <div class="col-sm-9" >
@@ -83,180 +81,170 @@
 
                 <div id="map" style="width: 100%; height: 200px;"></div>
                 <input id="buttonId" type="submit" name="add" class="btn btn-primary" value="Submit">
-              </form>
-                <script>
-
-    
-var map = L.map('map').setView([51.049999, -114.066666], 10);
-    //  add base map tiles from OpenStreetMap and attribution info to 'map' div
-    L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-    }).addTo(map);
-
-    // create popup contents
-    var customPopup = "Hi";
-    
-    // specify popup options 
-    var customOptions =
-        {
-        'maxWidth': '500',
-        'className' : 'custom'
-        }
-    
-    // create marker object, pass custom icon as option, pass content and options to popup, add to map
-    L.marker([51.0776,  -114.1407]).bindPopup(customPopup,customOptions).addTo(map);
-    
-                </script>
-
-                <!--
-
-                Use this snippet to add a google map location chooser to your form
-
-                Step 1: Get a google map api key and insert it in the first javascript tag
-                Step 2: In your html form, create two hidden elements, one for latitude, and one for longitude. Give the elements ids and set the LATITUDE_ELEMENT_ID and LONGITUDE_ELEMENT_ID to the appropriate variables
-                Done!
-
-                -->
-
-                <!-- <div id="google_map" style="width:800px;height:400px;"></div> -->
-
-                <script type="text/javascript" src="http://www.google.com/jsapi?key=<%=AIzaSyBznL61TDKgu_Di7wVp2d5Vw7WeTYFmQIA%>"></script>
-                <script type="text/javascript">
-
-                  var LATITUDE_ELEMENT_ID = "course_latitude";
-                  var LONGITUDE_ELEMENT_ID = "course_longitude";
-                  var MAP_DIV_ELEMENT_ID = "google_map";
-
-                  var DEFAULT_ZOOM_WHEN_NO_COORDINATE_EXISTS = 1;
-                  var DEFAULT_CENTER_LATITUDE = 22;
-                  var DEFAULT_CENTER_LONGITUDE = 13;
-                  var DEFAULT_ZOOM_WHEN_COORDINATE_EXISTS = 15;
-
-                  // This is the zoom level required to position the marker
-                  var REQUIRED_ZOOM = 15;
-
-                  google.load("maps", "2.x");
-
-                  // The google map variable
-                  var map = null;
-
-                  // The marker variable, when it is null no marker has been added
-                  var marker = null;
-
-                  function initializeGoogleMap() {
-                    map = new google.maps.Map2(document.getElementById(MAP_DIV_ELEMENT_ID));
-                    map.addControl(new GLargeMapControl());
-                    map.addControl(new GMapTypeControl());
-
-                    map.setMapType(G_NORMAL_MAP);
-
-                    var latitude = +document.getElementById(LATITUDE_ELEMENT_ID).value;
-                    var longitude = +document.getElementById(LONGITUDE_ELEMENT_ID).value;
-
-                    if(latitude != 0 && longitude != 0) {
-                      //We have some sort of starting position, set map center and marker
-                      map.setCenter(new google.maps.LatLng(latitude, longitude), DEFAULT_ZOOM_WHEN_COORDINATE_EXISTS);
-                      var point = new GLatLng(latitude, longitude);
-                      marker = new GMarker(point, {draggable:false});
-                      map.addOverlay(marker);
-                    } else {
-                      // Just set the default center, do not add a marker
-                      map.setCenter(new google.maps.LatLng(DEFAULT_CENTER_LATITUDE, DEFAULT_CENTER_LONGITUDE), DEFAULT_ZOOM_WHEN_NO_COORDINATE_EXISTS);
-                    }
-
-                    GEvent.addListener(map, "click", googleMapClickHandler);
-                  }
+             </form>
+	      
+	<script>
+	var map = L.map('map').setView([51.049999, -114.066666], 10);
+	    L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+	    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+	    }).addTo(map);
 
 
-                  function googleMapClickHandler(overlay, latlng, overlaylatlng) {
+	    var customPopup = "Hi";
+	    var customOptions =
+		{
+		'maxWidth': '500',
+		'className' : 'custom'
+		}
 
-                    if(map.getZoom() < REQUIRED_ZOOM) {
-                      alert("<%= :you_must_zoom_in_closer_to_position_the_course_accurately.l %>" );
-                      return;
-                    }
-                    if(marker == null) {
-                      marker = new GMarker(latlng, {draggable:false});
-                      map.addOverlay(marker);
-                    }
-                    else {
-                      marker.setLatLng(latlng);
-                    }
+	    L.marker([51.0776,  -114.1407]).bindPopup(customPopup,customOptions).addTo(map);
 
-                    document.getElementById(LATITUDE_ELEMENT_ID).value = latlng.lat();
-                    document.getElementById(LONGITUDE_ELEMENT_ID).value = latlng.lng();
+	</script>
 
-                  }
+	<!--
 
-                  google.setOnLoadCallback(initializeGoogleMap);
+	Use this snippet to add a google map location chooser to your form
+
+	Step 1: Get a google map api key and insert it in the first javascript tag
+	Step 2: In your html form, create two hidden elements, one for latitude, and one for longitude. Give the elements ids and set the LATITUDE_ELEMENT_ID and LONGITUDE_ELEMENT_ID to the appropriate variables
+	Done!
+
+	-->
+
+	<!-- <div id="google_map" style="width:800px;height:400px;"></div> -->
+
+	<script type="text/javascript" src="http://www.google.com/jsapi?key=<%=AIzaSyBznL61TDKgu_Di7wVp2d5Vw7WeTYFmQIA%>"></script>
+	<script type="text/javascript">
+
+	  var LATITUDE_ELEMENT_ID = "course_latitude";
+	  var LONGITUDE_ELEMENT_ID = "course_longitude";
+	  var MAP_DIV_ELEMENT_ID = "google_map";
+
+	  var DEFAULT_ZOOM_WHEN_NO_COORDINATE_EXISTS = 1;
+	  var DEFAULT_CENTER_LATITUDE = 22;
+	  var DEFAULT_CENTER_LONGITUDE = 13;
+	  var DEFAULT_ZOOM_WHEN_COORDINATE_EXISTS = 15;
+
+	  // This is the zoom level required to position the marker
+	  var REQUIRED_ZOOM = 15;
+
+	  google.load("maps", "2.x");
+
+	  // The google map variable
+	  var map = null;
+
+	  // The marker variable, when it is null no marker has been added
+	  var marker = null;
+
+	  function initializeGoogleMap() {
+	    map = new google.maps.Map2(document.getElementById(MAP_DIV_ELEMENT_ID));
+	    map.addControl(new GLargeMapControl());
+	    map.addControl(new GMapTypeControl());
+
+	    map.setMapType(G_NORMAL_MAP);
+
+	    var latitude = +document.getElementById(LATITUDE_ELEMENT_ID).value;
+	    var longitude = +document.getElementById(LONGITUDE_ELEMENT_ID).value;
+
+	    if(latitude != 0 && longitude != 0) {
+	      //We have some sort of starting position, set map center and marker
+	      map.setCenter(new google.maps.LatLng(latitude, longitude), DEFAULT_ZOOM_WHEN_COORDINATE_EXISTS);
+	      var point = new GLatLng(latitude, longitude);
+	      marker = new GMarker(point, {draggable:false});
+	      map.addOverlay(marker);
+	    } else {
+	      // Just set the default center, do not add a marker
+	      map.setCenter(new google.maps.LatLng(DEFAULT_CENTER_LATITUDE, DEFAULT_CENTER_LONGITUDE), DEFAULT_ZOOM_WHEN_NO_COORDINATE_EXISTS);
+	    }
+
+	    GEvent.addListener(map, "click", googleMapClickHandler);
+	  }
+
+
+	  function googleMapClickHandler(overlay, latlng, overlaylatlng) {
+
+	    if(map.getZoom() < REQUIRED_ZOOM) {
+	      alert("<%= :you_must_zoom_in_closer_to_position_the_course_accurately.l %>" );
+	      return;
+	    }
+	    if(marker == null) {
+	      marker = new GMarker(latlng, {draggable:false});
+	      map.addOverlay(marker);
+	    }
+	    else {
+	      marker.setLatLng(latlng);
+	    }
+
+	    document.getElementById(LATITUDE_ELEMENT_ID).value = latlng.lat();
+	    document.getElementById(LONGITUDE_ELEMENT_ID).value = latlng.lng();
+
+	  }
+
+	  google.setOnLoadCallback(initializeGoogleMap);
 
 
 
-                </script>
-
-                
+	</script>        
       </div>
     </div>
 
     <br>
 
     <div class="col-sm-9">
-        <div class="well" style="background-image:linear-gradient(to right, #402bffd0, #419affda);">
-          <h4 id="#section2" style="color: #ffffff;"> <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16" style="vertical-align: middle;">
-            <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
-          </svg> Story</h4>
-        </div>
-      
+		<div class="well" style="background-image:linear-gradient(to right, #402bffd0, #419affda);">
+		  <h4 id="#section2" style="color: #ffffff;"> <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16" style="vertical-align: middle;">
+		    <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+		  </svg> Story</h4>
+		</div>
 
-      <br>
+		<br>
 
-      <div class="row">
+	      <div class="row">
 
-        <div class="col-sm-3">
-          <div class="well">
-            <div class="card" style="width: 18rem;">
-              <img src="https://cdn.britannica.com/60/137760-050-9EFAB73A/Calgary-foreground-Pengrowth-Saddledome-Canada-Alberta.jpg" class="card-img-top" alt="..." width="250" height="150">
-              <div class="card-body">
-                <h5 class="card-title">Story 1</h5>
-                <p class="card-text">Some sotory in calgary, Some sotory in calgary.</p>
-                <a href="#" class="btn btn-primary">Go to location</a>
-              </div>
-            </div>
-          </div>
-        </div>
-            
-        
-        <div class="col-sm-3">
-          <div class="well">
-              <div class="card" style="width: 18rem;">
-                <img src="../static/IMG_8765.jpg" class="card-img-top" alt="..." width="250" height="150">
-                <div class="card-body">
-                  <h5 class="card-title">Calgary Night</h5>
-                  <p class="card-text">Best view of Calgary's downton in night :)</p>
-                  <a href="#" class="btn btn-primary">Go to location</a>
-                </div>
-              </div>
-          </div>
-        </div>
+		<div class="col-sm-3">
+		  <div class="well">
+		    <div class="card" style="width: 18rem;">
+		      <img src="https://cdn.britannica.com/60/137760-050-9EFAB73A/Calgary-foreground-Pengrowth-Saddledome-Canada-Alberta.jpg" class="card-img-top" alt="..." width="250" height="150">
+		      <div class="card-body">
+			<h5 class="card-title">Story 1</h5>
+			<p class="card-text">Some sotory in calgary, Some sotory in calgary.</p>
+			<a href="#" class="btn btn-primary">Go to location</a>
+		      </div>
+		    </div>
+		  </div>
+		</div>
 
-        <div class="col-sm-3">
-          <div class="well">
-              <div class="card" style="width: 18rem;">
-                <img src="../static/old_cinema.jpeg" class="card-img-top" alt="..." width="250" height="150">
-                  <div class="card-body">
-                    <h5 class="card-title">Live in 90s</h5>
-                    <p class="card-text">This cinama feels you watch movie in 90s</p>
-                    <a href="#" class="btn btn-primary">Go to location</a>
-                  </div>
-              </div>
-          </div>
-        </div>
 
-    </div>
+		<div class="col-sm-3">
+		  <div class="well">
+		      <div class="card" style="width: 18rem;">
+			<img src="../static/IMG_8765.jpg" class="card-img-top" alt="..." width="250" height="150">
+			<div class="card-body">
+			  <h5 class="card-title">Calgary Night</h5>
+			  <p class="card-text">Best view of Calgary's downton in night :)</p>
+			  <a href="#" class="btn btn-primary">Go to location</a>
+			</div>
+		      </div>
+		  </div>
+		</div>
 
-    </div>
+		<div class="col-sm-3">
+		  <div class="well">
+		      <div class="card" style="width: 18rem;">
+			<img src="../static/old_cinema.jpeg" class="card-img-top" alt="..." width="250" height="150">
+			  <div class="card-body">
+			    <h5 class="card-title">Live in 90s</h5>
+			    <p class="card-text">This cinama feels you watch movie in 90s</p>
+			    <a href="#" class="btn btn-primary">Go to location</a>
+			  </div>
+		      </div>
+		  </div>
+		</div>
 
-  </div>
-</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
 
 </body>
 </html>
