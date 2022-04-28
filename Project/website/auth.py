@@ -1,5 +1,5 @@
 
-from flask import Blueprint, redirect, render_template, request, flash,url_for
+from flask import Blueprint, redirect, render_template, request, flash,url_for, abort
 from .models import User
 from werkzeug.security import generate_password_hash, check_password_hash
 from . import db
@@ -11,7 +11,6 @@ auth= Blueprint('auth',__name__)
 
 @auth.route('/')
 def home():
-    # return redirect(url_for('home.html'))
     return render_template('home.html')
 
 @auth.route('/dash', methods=['GET','POST'])
@@ -27,7 +26,6 @@ def dash():
 @login_required
 def logout():
     logout_user()
-    # return redirect(url_for('auth.login'))
     return render_template('home.html')
 
 
@@ -36,6 +34,10 @@ def login():
     if request.method=='POST':
         email=request.form.get('email')
         password=request.form.get('password')
+        
+        # if a username isn't supplied in the request, return a 400 bad request
+        # if email or password is None:
+        #     abort(400, 'Please check email and password.')
 
         user=User.query.filter_by(email=email).first()
         if user:
@@ -69,7 +71,6 @@ def signup():
             db.session.add(new_user)
             db.session.commit() 
             flash('Account Created', category='success')
-            
-    # return render_template("login.html", user=current_user)
+   
     return redirect('/login')
 
