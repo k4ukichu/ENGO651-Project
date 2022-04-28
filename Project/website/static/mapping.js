@@ -528,3 +528,87 @@ function route(){
   });
 }
 
+function edit(){
+  traffic()
+  document.getElementById("name").innerHTML="Edit"
+    
+    map = L.map('map').setView([51.03, -114.04], 12);
+    
+    L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 18,
+    id: 'setir/ckzxpqvxp002714pf1mndpxad',
+    tileSize: 512,
+    zoomOffset: -1,
+    accessToken: 'pk.eyJ1Ijoic2V0aXIiLCJhIjoiY2t6eGF6cTBzMDh5YjJucDlxdDM0enE5cCJ9.3_P-KSMqZXf08z9rHzweWw'
+    }).addTo(map);
+
+    var geojsonFeature = {
+        "type": "Feature",
+        "properties": {
+            "name": "polyline"
+        },
+        "geometry": {
+            "type": "LineString",
+            "coordinates": []
+        }
+    };
+
+    var polylineStyle = {
+        "color": "#dd98f5",
+    };
+
+    var polyline = L.geoJSON(geojsonFeature, {style: polylineStyle}).addTo(map);
+
+    var geojsonFeature_simplify = {
+        "type": "Feature",
+        "geometry": {
+            "type": "LineString",
+            "coordinates": []
+        }
+    };
+
+    var polylineStyle_simplify = {
+        "color": "#05ab05",
+    };
+
+    var polyline_simplify = L.geoJSON(geojsonFeature_simplify, {style: polylineStyle_simplify}).addTo(map);
+
+    
+
+    function onMapClick(e) {
+        geojsonFeature["geometry"]["coordinates"].push([e.latlng['lng'], e.latlng['lat']]);
+        console.log(e);
+        console.log(geojsonFeature);
+        polyline.remove();
+        polyline = L.geoJSON(geojsonFeature, {style: polylineStyle}).addTo(map);
+    }
+
+    map.on('click', onMapClick);
+
+    slider = L.control.slider(function(value) {
+            console.log(value);
+            return toleranceV = value;}, 
+        {
+        max: 0.1,
+        value: 0.1,
+        step:0.0005,
+        size: '250px',
+        orientation:'vertical',
+        id: 'slider',
+        }).addTo(map);
+
+    L.easyButton( '<span class="line">&#47;</span>', function(){
+        var options = {tolerance: toleranceV, highQuality: false};
+        var simplified = turf.simplify(geojsonFeature, options);
+        polyline_simplify = L.geoJSON(simplified).addTo(map);
+    }).addTo(map);
+
+
+    L.easyButton( '<i class="fa fa-trash" aria-hidden="true"></i>', function(){
+        geojsonFeature["geometry"]["coordinates"] = [];
+        polyline.remove();
+        polyline_simplify.remove();
+    }).addTo(map);
+}
+
