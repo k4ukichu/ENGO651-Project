@@ -10,9 +10,10 @@ def home():
     if request.method=="POST":
         res=request.get("https://data.calgary.ca/resource/35ra-9556.geojson")
         
-        if res.status_code==200:
-            data=res.json()
+        if result.status_code==200:
+            data=result.json()
         else:
             data=""
-    return render_template("map.html", user=current_user,  geocode=data)
+       
+    return render_template("map.html", user=current_user,  geojsonFeature=data)
 
