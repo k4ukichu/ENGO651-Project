@@ -35,9 +35,8 @@ def login():
         email=request.form.get('email')
         password=request.form.get('password')
         
-        # if a username isn't supplied in the request, return a 400 bad request
-        # if email or password is None:
-        #     abort(400, 'Please check email and password.')
+        if email and password is None:
+            abort(400, 'Please check email and password.')
 
         user=User.query.filter_by(email=email).first()
         if user:
