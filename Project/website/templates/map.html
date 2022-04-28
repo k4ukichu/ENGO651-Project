@@ -19,6 +19,12 @@
 <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 <script src="{{url_for('static', filename='mapping.js')}}"></script>
 
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='leaflet-slider.css')}}">
+<script src="{{url_for('static', filename='leaflet-slider.js')}}"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OverlappingMarkerSpiderfier-Leaflet/0.2.6/oms.min.js"></script>
+<script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" />
 
 
 <style>
@@ -40,27 +46,20 @@
 
 </style> 
 
+<br>
 
-    <!-- <div class="btn-toolbar">
-        <button type="button" class="btn btn-primary" id="find" onClick="find()">Find me</button>
-        <button type="button" class="btn btn-primary" id="Traffic" onClick="traffic()">Traffic</button>
-        <button type="button" class="btn btn-primary" id="Traffic" onClick="toggle()">City Data</button>
-        <button type="button" class="btn btn-primary" id="Traffic" onClick="route()">Get Route</button>
-    </div> -->
+<h1 id="name"></h1>
+<div id="map"></div>
+<div id="hidden" class="sidebar">
+    <h1>Reports</h1>
+    <div id="reports"></div>
+</div>
 
-    <br>
-    <h1 id="name"></h1>
-    <div id="map"></div>
-    <div id="hidden" class="sidebar">
-        <h1>Reports</h1>
-        <div id="reports"></div>
-      </div>
-    </div>
 <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
 <script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBznL61TDKgu_Di7wVp2d5Vw7WeTYFmQIA&callback=initMap&v=weekly"
-    async
-></script>
+    async></script>
+
 <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
 integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
 crossorigin=""></script>
@@ -69,6 +68,6 @@ crossorigin=""></script>
 integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" 
 crossorigin="anonymous"></script>   
 
-
 <script text="text/javascript" src="mapping.js"></script>
+
 {% endblock %}
