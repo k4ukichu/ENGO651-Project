@@ -33,7 +33,7 @@ $ pip install -r requirements.txt
 ```
 3. Run the server
 ```sh
-$ python main.py
+$ python [main.py](https://github.com/k4ukichu/ENGO651-Project/blob/main/Project/main.py)
 ```
 4. Go to the server
 ```sh
