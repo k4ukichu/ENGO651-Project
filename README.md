@@ -39,7 +39,11 @@ $ python main.py
 ```sh
 $ server link: http://127.0.0.1:5000/
 ```
-> Now you have a access to the home page of the website 
+**Now you have a access to the home page of the website **
 
 
 # Webpage
+1. Home page ('home,html'):
+    Where you can go to the sing in page or sign up page
+    <img width="575" alt="image" src="https://user-images.githubusercontent.com/53395337/166068299-e0f93978-9f71-49ec-a01d-a696b47b4f4b.png">
+
