@@ -2,7 +2,7 @@
 
 The goal of the project is to create an app that can assist in recommending the best path to desired destinations in Calgary. The information on traffic volume and traffic incidents is available to users. All map-related features, such as route design and real-time traffic data maps, will be available only after the user login. The app also makes use of real-time data from IoT devices (GPS location data of the user to show it on the map). Users can share their perspectives and stories on the map interface with other users.
 
-# Libraries required to install:
+# Libraries 
 -	Flask
 -	Flask-Session
 -	Sqlite3
@@ -11,7 +11,7 @@ The goal of the project is to create an app that can assist in recommending the 
 > You can find all of these libraries in the requirements.txt.
 
 
-# Tools and Resources used:
+# Tools and Resources 
 -	HTML 
 -	CSS
 -	Python flask
@@ -31,7 +31,15 @@ $ source venv/bin/activate
 ```sh
 $ pip install -r requirements.txt
 ```
-3. Srun the server
+3. Run the server
 ```sh
 $ python main.py
 ```
+4. Go to the server
+```sh
+$ server link: http://127.0.0.1:5000/
+```
+> Now you have a access to the home page of the website 
+
+
+# Webpage
