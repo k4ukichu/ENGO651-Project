@@ -8,7 +8,7 @@ The goal of the project is to create an app that can assist in recommending the 
 -	Sqlite3
 
 
-> You can find all of these libraries in the requirements.txt.
+> You can find all of these libraries in the [requirements.txt](https://github.com/k4ukichu/ENGO651-Project/blob/main/requirements.txt).
 
 
 # Tools and Resources 
