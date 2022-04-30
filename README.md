@@ -49,12 +49,30 @@ $ server link: http://127.0.0.1:5000/
     
     <img width="575" alt="image" src="https://user-images.githubusercontent.com/53395337/166068299-e0f93978-9f71-49ec-a01d-a696b47b4f4b.png">
     
-2. SignIn/Sign Up page ()
+2. SignIn/Sign Up page ([login.html](https://github.com/k4ukichu/ENGO651-Project/blob/main/Project/website/templates/login.html))
     
     Users can create a account or sign in to their accounts 
     
-    <img width="406" alt="image" src="https://user-images.githubusercontent.com/53395337/166084342-da2311dc-f48a-4f7d-b7ad-f7b3846145f4.png">
-    <img width="402" alt="image" src="https://user-images.githubusercontent.com/53395337/166084355-f419da51-1cb2-4c8d-a5af-316fa25312aa.png">
+    <img width="575" alt="image" src="https://user-images.githubusercontent.com/53395337/166084342-da2311dc-f48a-4f7d-b7ad-f7b3846145f4.png">
+    <img width="575" alt="image" src="https://user-images.githubusercontent.com/53395337/166084355-f419da51-1cb2-4c8d-a5af-316fa25312aa.png">
+    
+ 3. After login, you can have access to map page, where you can works with some features:
+ 
+    -   Find your location by using your device as a IOT device:
+
+        <img width="575" alt="image" src="https://user-images.githubusercontent.com/53395337/166084772-a9bb6cc0-9c44-4a33-beb3-cda7a84556a4.png">
+        
+    -   Check the real time traffic of your neighbourhood also can have access to google Street views and satellite images:
+    
+        <img width="575" alt="image" src="https://user-images.githubusercontent.com/53395337/166084848-5ca42e1e-49e8-4231-b253-bf5a2ad093aa.png">
+        <img width="575" alt="Screen Shot 2022-04-29 at 21 16 06" src="https://user-images.githubusercontent.com/53395337/166084917-85144712-1da9-4514-b0a4-7eb52b7a85bd.png">
+        <img width="575" alt="Screen Shot 2022-04-29 at 21 16 20" src="https://user-images.githubusercontent.com/53395337/166084933-772d30fc-6073-4b87-b639-7890f55e7431.png">
+
+
+        
+    
+
+    
 
     
     
