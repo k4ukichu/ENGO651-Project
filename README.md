@@ -48,4 +48,21 @@ $ server link: http://127.0.0.1:5000/
     Where you can go to the sing in page or sign up page
     
     <img width="575" alt="image" src="https://user-images.githubusercontent.com/53395337/166068299-e0f93978-9f71-49ec-a01d-a696b47b4f4b.png">
+    
+2. SignIn/Sign Up page ()
+    
+    Users can create a account or sign in to their accounts 
+    
+    <img width="406" alt="image" src="https://user-images.githubusercontent.com/53395337/166084342-da2311dc-f48a-4f7d-b7ad-f7b3846145f4.png">
+    <img width="402" alt="image" src="https://user-images.githubusercontent.com/53395337/166084355-f419da51-1cb2-4c8d-a5af-316fa25312aa.png">
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
