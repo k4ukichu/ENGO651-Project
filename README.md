@@ -75,9 +75,19 @@ $ server link: http://127.0.0.1:5000/
     
 - Find the places with their level of risks of accidents and get navigated by avoiding the locations with risks of accidents (based on Calagry's accidents  data). also this feature suggested routes for walking and cycling too.
 
-<img width="575" alt="image" src="https://user-images.githubusercontent.com/53395337/166085424-6840d020-7664-4a44-b882-34a50a2b058e.png">
-<img width="575" alt="image" src="https://user-images.githubusercontent.com/53395337/166085431-bab462ea-f7c9-4374-bbee-855053b7cbfc.png">
-<img width="575" alt="image" src="https://user-images.githubusercontent.com/53395337/166085472-9bf168ed-3c2e-49dc-ab1a-80d4a44911a1.png">
+    <img width="575" alt="image" src="https://user-images.githubusercontent.com/53395337/166085424-6840d020-7664-4a44-b882-34a50a2b058e.png">
+    <img width="575" alt="image" src="https://user-images.githubusercontent.com/53395337/166085431-bab462ea-f7c9-4374-bbee-855053b7cbfc.png">
+    <img width="575" alt="image" src="https://user-images.githubusercontent.com/53395337/166085472-9bf168ed-3c2e-49dc-ab1a-80d4a44911a1.png">
+    <img width="575" alt="Screen Shot 2022-04-29 at 21 35 56" src="https://user-images.githubusercontent.com/53395337/166085548-4dc0c1f6-3354-4dbe-8713-ac238ff73ce3.png">
+    <img width="575" alt="Screen Shot 2022-04-29 at 21 36 29" src="https://user-images.githubusercontent.com/53395337/166085552-2ec9be63-aa9e-4406-9a31-625690548be1.png">
+    
+4. From Map page, you can go to the dashboard page, where you can access to your stories and post them.
+
+<img width="575" alt="Screen Shot 2022-04-29 at 21 39 01" src="https://user-images.githubusercontent.com/53395337/166085609-535855c5-540c-439d-83b6-fc8f2671ef48.png">
+
+5. You can logout by clicking the logout button.
+
+
 
 
 
