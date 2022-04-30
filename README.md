@@ -58,15 +58,15 @@ $ server link: http://127.0.0.1:5000/
     
  3. After login, you can have access to map page, where you can works with some features:
  
-    -   Find your location by using your device as a IOT device:
+-   Find your location by using your device as a IOT device:
 
-        <img width="575" alt="image" src="https://user-images.githubusercontent.com/53395337/166084772-a9bb6cc0-9c44-4a33-beb3-cda7a84556a4.png">
-        
-    -   Check the real time traffic of your neighbourhood also can have access to google Street views and satellite images:
-    
-        <img width="575" alt="image" src="https://user-images.githubusercontent.com/53395337/166084848-5ca42e1e-49e8-4231-b253-bf5a2ad093aa.png">
-        <img width="575" alt="Screen Shot 2022-04-29 at 21 16 06" src="https://user-images.githubusercontent.com/53395337/166084917-85144712-1da9-4514-b0a4-7eb52b7a85bd.png">
-        <img width="575" alt="Screen Shot 2022-04-29 at 21 16 20" src="https://user-images.githubusercontent.com/53395337/166084933-772d30fc-6073-4b87-b639-7890f55e7431.png">
+    <img width="575" alt="image" src="https://user-images.githubusercontent.com/53395337/166084772-a9bb6cc0-9c44-4a33-beb3-cda7a84556a4.png">
+
+-   Check the real time traffic of your neighbourhood also can have access to google Street views and satellite images:
+
+    <img width="575" alt="Screen Shot 2022-04-29 at 21 19 14" src="https://user-images.githubusercontent.com/53395337/166084976-772a8f8f-8414-434d-a307-026921c2994e.png">
+    <img width="575" alt="Screen Shot 2022-04-29 at 21 16 06" src="https://user-images.githubusercontent.com/53395337/166084917-85144712-1da9-4514-b0a4-7eb52b7a85bd.png">
+    <img width="575" alt="Screen Shot 2022-04-29 at 21 16 20" src="https://user-images.githubusercontent.com/53395337/166084933-772d30fc-6073-4b87-b639-7890f55e7431.png">
 
 
         
