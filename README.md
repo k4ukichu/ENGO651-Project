@@ -94,7 +94,7 @@ $ server link: http://127.0.0.1:5000/
 - ```main.py```:    Calling the code.
 - ```auth.py```:    Python file for app and application functions.
 - ```models.py```:  Contains all database models.
-- ```views.py```:   Python file for map functions and using the GeoJson file.
+- ```views.py```:   Python file for map functions and using the GeoJSON file.
 
 ### HTML
 - ```base.html```:  Layouts of html files.
