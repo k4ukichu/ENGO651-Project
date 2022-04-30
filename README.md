@@ -115,7 +115,12 @@ $ server link: http://127.0.0.1:5000/
 - ```leaflet-slider.js```: JS file for edit feature (edit feature  is in progress...).
 
 ### Images
-Some svg, png and jpg files for interface of the application.
+- Some svg, png and jpg files for interface of the application.
+
+| Members | Responsibilities  |
+| --- | --- |
+| Seti | Front-end/ Debugging the back-end/ Github/ Report|
+| Krishnakishore | Back-end/ database/ Resarch/ Github/ Report|
 
 
 
