@@ -89,9 +89,17 @@ $ server link: http://127.0.0.1:5000/
 
 # Project Files
 
-### HTML
+### Python
  
-```main.py:```
+- ```main.py```:    Calling the code.
+- ```auth.py```:    Python file for app and application functions.
+- ```models.py```:  Contains all database models.
+- ```views.py```:   Python file for map functions and using the GeoJson file.
+
+### Database
+- ```auth.py```:
+- ```auth.py```:
+
 
 
 
