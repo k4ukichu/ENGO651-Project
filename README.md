@@ -117,6 +117,8 @@ $ server link: http://127.0.0.1:5000/
 ### Images
 - Some svg, png and jpg files for interface of the application.
 
+# Members
+
 | Members | Responsibilities  |
 | --- | --- |
 | Seti | Front-end/ Debugging the back-end/ Github/ Report|
