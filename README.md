@@ -96,9 +96,26 @@ $ server link: http://127.0.0.1:5000/
 - ```models.py```:  Contains all database models.
 - ```views.py```:   Python file for map functions and using the GeoJson file.
 
-### Database
-- ```auth.py```:
-- ```auth.py```:
+### HTML
+- ```base.html```:  Layouts of html files.
+- ```dashboard.html```:    Dashboard page and Story page.
+- ```home.html```:  The welcome page of the application.
+- ```login.html```: Login and signup file.
+- ```map.html```: For visualizing maps.
+
+### Style
+- ```index.css```: CSS file for ```base.html``` and ```home.html```:.
+- ```signup.css```: CSS file for ```login.html```.
+- ```maps.css```: CSS file for ```map.html```.
+- ```leaflet-slider.css```: CSS file for edit feature (edit feature  is in progress...).
+
+### Java Script 
+- ```signup.js```: JS file for ```login.html``` which is using overlay features.
+- ```mapping.js```: JS file for ```map.html```.
+- ```leaflet-slider.js```: JS file for edit feature (edit feature  is in progress...).
+
+### Images
+Some svg, png and jpg files for interface of the application.
 
 
 
