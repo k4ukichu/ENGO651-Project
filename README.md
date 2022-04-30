@@ -87,6 +87,14 @@ $ server link: http://127.0.0.1:5000/
 
 5. You can logout by clicking the logout button.
 
+# Project Files
+
+### HTML
+ 
+```
+main.py: 
+```
+
 
 
 
