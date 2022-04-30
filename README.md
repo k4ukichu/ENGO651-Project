@@ -67,6 +67,14 @@ $ server link: http://127.0.0.1:5000/
     <img width="575" alt="Screen Shot 2022-04-29 at 21 19 14" src="https://user-images.githubusercontent.com/53395337/166084976-772a8f8f-8414-434d-a307-026921c2994e.png">
     <img width="575" alt="Screen Shot 2022-04-29 at 21 16 06" src="https://user-images.githubusercontent.com/53395337/166084917-85144712-1da9-4514-b0a4-7eb52b7a85bd.png">
     <img width="575" alt="Screen Shot 2022-04-29 at 21 16 20" src="https://user-images.githubusercontent.com/53395337/166084933-772d30fc-6073-4b87-b639-7890f55e7431.png">
+    
+-   Check Calgary traffic data and find the location of traffic cameras and the places with incidents in Calgary, also it is showed the coverage of calgary transits
+
+<img width="575" alt="Screen Shot 2022-04-29 at 21 25 08" src="https://user-images.githubusercontent.com/53395337/166085188-0b549a1b-4c5a-41a7-805b-bfb73df4d378.png">
+<img width="575" alt="Screen Shot 2022-04-29 at 21 25 25" src="https://user-images.githubusercontent.com/53395337/166085193-36de8378-31dd-4202-a55c-35382b0a9850.png">
+
+
+    
 
 
         
