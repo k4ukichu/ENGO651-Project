@@ -70,8 +70,18 @@ $ server link: http://127.0.0.1:5000/
     
 -   Check Calgary traffic data and find the location of traffic cameras and the places with incidents in Calgary, also it is showed the coverage of calgary transits
 
-<img width="575" alt="Screen Shot 2022-04-29 at 21 25 08" src="https://user-images.githubusercontent.com/53395337/166085188-0b549a1b-4c5a-41a7-805b-bfb73df4d378.png">
-<img width="575" alt="Screen Shot 2022-04-29 at 21 25 25" src="https://user-images.githubusercontent.com/53395337/166085193-36de8378-31dd-4202-a55c-35382b0a9850.png">
+    <img width="575" alt="Screen Shot 2022-04-29 at 21 25 08" src="https://user-images.githubusercontent.com/53395337/166085188-0b549a1b-4c5a-41a7-805b-bfb73df4d378.png">
+    <img width="575" alt="Screen Shot 2022-04-29 at 21 25 25" src="https://user-images.githubusercontent.com/53395337/166085193-36de8378-31dd-4202-a55c-35382b0a9850.png">
+    
+- Find the places with their level of risks of accidents and get navigated by avoiding the locations with risks of accidents (based on Calagry's accidents  data). also this feature suggested routes for walking and cycling too.
+
+<img width="575" alt="image" src="https://user-images.githubusercontent.com/53395337/166085424-6840d020-7664-4a44-b882-34a50a2b058e.png">
+<img width="575" alt="image" src="https://user-images.githubusercontent.com/53395337/166085431-bab462ea-f7c9-4374-bbee-855053b7cbfc.png">
+<img width="575" alt="image" src="https://user-images.githubusercontent.com/53395337/166085472-9bf168ed-3c2e-49dc-ab1a-80d4a44911a1.png">
+
+
+
+
 
 
     
