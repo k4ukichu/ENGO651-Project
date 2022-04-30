@@ -56,7 +56,7 @@ $ server link: http://127.0.0.1:5000/
     <img width="575" alt="image" src="https://user-images.githubusercontent.com/53395337/166084342-da2311dc-f48a-4f7d-b7ad-f7b3846145f4.png">
     <img width="575" alt="image" src="https://user-images.githubusercontent.com/53395337/166084355-f419da51-1cb2-4c8d-a5af-316fa25312aa.png">
     
- 3. After login, you can have access to map page, where you can works with some features:
+ 3. After login, you can have access to map page, where you can works with some features ([map.html](https://github.com/k4ukichu/ENGO651-Project/blob/main/Project/website/templates/map.html)):
  
 -   Find your location by using your device as a IOT device:
 
@@ -81,9 +81,9 @@ $ server link: http://127.0.0.1:5000/
     <img width="575" alt="Screen Shot 2022-04-29 at 21 35 56" src="https://user-images.githubusercontent.com/53395337/166085548-4dc0c1f6-3354-4dbe-8713-ac238ff73ce3.png">
     <img width="575" alt="Screen Shot 2022-04-29 at 21 36 29" src="https://user-images.githubusercontent.com/53395337/166085552-2ec9be63-aa9e-4406-9a31-625690548be1.png">
     
-4. From Map page, you can go to the dashboard page, where you can access to your stories and post them.
+4. From Map page, you can go to the dashboard page, where you can access to your stories and post them ([dashboard.html](https://github.com/k4ukichu/ENGO651-Project/blob/main/Project/website/templates/dashboard.html)).
 
-<img width="575" alt="Screen Shot 2022-04-29 at 21 39 01" src="https://user-images.githubusercontent.com/53395337/166085609-535855c5-540c-439d-83b6-fc8f2671ef48.png">
+    <img width="575" alt="Screen Shot 2022-04-29 at 21 39 01" src="https://user-images.githubusercontent.com/53395337/166085609-535855c5-540c-439d-83b6-fc8f2671ef48.png">
 
 5. You can logout by clicking the logout button.
 
